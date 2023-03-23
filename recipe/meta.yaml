@@ -1,5 +1,5 @@
 {% set name = "grep" %}
-{% set version = "3.9" %}
+{% set version = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://mirrors.kernel.org/gnu/{{ name }}/{{ name }}-{{ version }}.tar.xz
-  sha256: abcd11409ee23d4caf35feb422e53bbac867014cfeed313bb5f488aca170b599
+  sha256: 24efa5b595fb5a7100879b51b8868a0bb87a71c183d02c4c602633b88af6855b
 
 build:
-  number: 1
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
