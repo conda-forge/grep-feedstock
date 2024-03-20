@@ -11,6 +11,6 @@ channel_targets:
 docker_image:
 - quay.io/condaforge/linux-anvil-ppc64le
 pcre2:
-- '10.40'
+- '10.43'
 target_platform:
 - linux-ppc64le
