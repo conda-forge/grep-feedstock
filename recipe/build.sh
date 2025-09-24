@@ -15,7 +15,8 @@ echo "exit 77" > gnulib-tests/test-mbrlen5.sh
 
 make -j${CPU_COUNT}
 
-if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR:-}" != "" ]]; then
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" ]]; then
+  # Don't run tests on emulated platforms, there expected paths don't match.
   make check
 fi
 
