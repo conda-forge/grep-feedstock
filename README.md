@@ -10,14 +10,12 @@ Package license: GPL-3.0-or-later
 Summary: Grep searches one or more input files for lines containing a match to a
 specified pattern
 
-
 Documentation: https://www.gnu.org/software/grep/manual/
 
 Given one or more patterns, grep searches input files for matches to the
 patterns. When it finds a match in a line, it copies the line to standard
 output (by default), or produces whatever other sort of output you have
 requested with options.
-
 
 Current build status
 ====================
@@ -201,4 +199,5 @@ Feedstock Maintainers
 =====================
 
 * [@calebzulawski](https://github.com/calebzulawski/)
+* [@xhochy](https://github.com/xhochy/)
 
