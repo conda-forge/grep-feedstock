@@ -11,6 +11,8 @@ package:
 source:
   url: https://mirrors.kernel.org/gnu/${{ name }}/${{ name }}-${{ version }}.tar.xz
   sha256: 2649b27c0e90e632eadcd757be06c6e9a4f48d941de51e7c0f83ff76408a07b9
+  patches:
+    - 0001-c32is-c32to-tests-Avoid-test-failures-on-macOS-15.4.patch
 
 build:
   number: 0
@@ -21,8 +23,11 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
     - make
+    - gettext-tools
   host:
     - pcre2
+    - if: osx
+      then: libintl-devel
 
 tests:
   - script:
