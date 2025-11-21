@@ -15,7 +15,7 @@ source:
     - 0001-c32is-c32to-tests-Avoid-test-failures-on-macOS-15.4.patch
 
 build:
-  number: 0
+  number: 1
   skip: win
 
 requirements:
